@@ -1,33 +1,3 @@
-import streamlit as st
-
-# Konfigurasi halaman
-st.set_page_config(page_title="Diet Sehat", page_icon="🍇", layout="centered")
-
-# CSS untuk background gradasi dan style teks
-st.markdown("""
-    <style>
-        body {
-            background: linear-gradient(to right, #5dade2, #d2b4de);
-        }
-        .title {
-            text-align: center;
-            color: black;
-            font-size: 36px;
-            font-weight: bold;
-            margin-top: 50px;
-        }
-        .image-container {
-            text-align: center;
-            margin-top: 30px;
-        }
-        .button-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 40px;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
 # Halaman Utama
 def home_page():
     # Judul Halaman Utama
@@ -108,4 +78,3 @@ elif st.session_state.page == "next_page":
     next_page()
 elif st.session_state.page == "bmi_input":
     bmi_input_page()
- 
